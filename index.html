@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <script src="./index.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+   
+    <div class="main-screen glassmorphism">
+        <div id="mainScreen-bg" class="backgrounds"></div>
+        <div class="content glassmorphism">
+            <h1>Main screen</h1>
+            <button class="side-btns showAfter1Sec pulse" id="mainScreen-left-btn" onClick="changeScreen('main-screen','left-screen')"><img class="nav-btns-img" style="transform: rotate(+90deg);" src="./resources/imgs/arrows.png">About</button>
+            <button class="side-btns showAfter1Sec pulse" id="mainScreen-bottom-btn" onClick="changeScreen('main-screen','bottom-screen')">Projects<img class="nav-btns-img" src="./resources/imgs/arrows.png"></button>
+            <button class="side-btns showAfter1Sec pulse" id="mainScreen-right-btn" onClick="changeScreen('main-screen','right-screen')"><img class="nav-btns-img" style="transform: rotate(-90deg);" src="./resources/imgs/arrows.png">Contact</button>
+        </div>
+    </div>
+    <div class="side-screen left-screen moveLeft">
+        <div id="leftScreen-bg" class="backgrounds"></div>
+        <div class="content glassmorphism">
+            
+            <h1>About</h1>
+            <button class="side-btns" id="leftScreen-main-btn" onClick="changeScreen('left-screen','main-screen')"><img class="nav-btns-img" style="transform: rotate(-90deg);" src="./resources/imgs/arrows.png"></button>
+       
+        </div>
+    </div>
+    <div class="side-screen bottom-screen moveDown glassmorphism">
+        <div id="bottomScreen-bg" class="backgrounds"></div>
+        <div class="content glassmorphism">
+            
+            <h1>Projects</h1>
+            <button class="side-btns showAfter1Sec pulse" id="bottomScreen-main-btn" onClick="changeScreen('bottom-screen','main-screen')"><img class="nav-btns-img" style="transform: rotate(-180deg);" src="./resources/imgs/arrows.png"></button>
+            
+        </div>
+    </div>
+    <div class="side-screen right-screen moveRight glassmorphism">
+        <div id="rightScreen-bg" class="backgrounds"></div>
+        <div class="content glassmorphism">
+            
+            <h1>Contact</h1>
+            <button class="side-btns" id="rightScreen-main-btn" onClick="changeScreen('right-screen','main-screen')"><img class="nav-btns-img" style="transform: rotate(+90deg);" src="./resources/imgs/arrows.png"></button>
+            
+        </div>
+    </div>
+</body>
+</html>
