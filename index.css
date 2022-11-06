@@ -9,7 +9,6 @@ body{
 }
 .left-screen{
     position: absolute;
-    color: red;
 
 }
 #leftScreen-bg{
@@ -26,15 +25,13 @@ body{
 }
 .bottom-screen{
     position: absolute;
-    color: green;
+    
 }
 #bottomScreen-bg{
     background-image: url('./resources/imgs/bg2.jpg');
 }
 .right-screen{
     position: absolute;
-    color: purple;
-
 }
 #rightScreen-bg{
     background-image: url('./resources/imgs/bg3.jpg'); 
@@ -59,12 +56,7 @@ body{
     width: 100vw;
 }
 .glassmorphism{
-     /* From https://css.glass */
-     border-radius: 16px;
-     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
      backdrop-filter: blur(5px);
-     -webkit-backdrop-filter: blur(5px);
-     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 #mainScreen-bg{
     background-image: url('./resources/imgs/bg1.jpg');
@@ -180,4 +172,280 @@ body{
     left: 10px;
 }
 
+
+
+/*project screen */
+.project-body{
+    border: 1px solid lightgray;
+    min-height: 350px;
+    min-width: 250px;
+    width: 25vw;
+    height: 45vh;
+    background-color: rgba(211, 211, 211, 0.438);
+    display: flex;
+    flex-direction: column;
+}
+@media only screen and (max-width: 1300px) {
+    .project-body {
+      height: 300px;
+      width: 250px;
+    }
+    .project-imgs{
+        width: 250px !important;
+        height: auto;
+    }
+   
+    
+  }
+.projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    max-height: 90%;
+}
+
+.projects-container img{
+    min-width: 250px;
+    width: 25vw;
+}
+.project-body .info{
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.project-body .btns{
+    width: 100%;
+    min-height: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    
+    
+}
+.project-name{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.project-body a{
+    color: black;
+    text-decoration: none;
+    border: 1px solid lightgray;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.664);
+}
+
+.project-body a:hover{
+    background-color: rgb(223, 222, 222);
+}
+.project-body button:hover{
+    background-color: rgb(223, 222, 222);
+
+}
+
+
+
+
+/* contact screen */
+
+.contact-body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-form{
+    height: 60%;
+    width: 30%;
+    background-color: rgba(22, 20, 20, 0.596);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+    color: white;
+    border-radius: 10px;
+}
+.contact-form input{
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding-left: 5px;
+}
+.contact-form fieldset{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    border: none;
+}
+.contact-form label{
+    font-size: 20px;
+}
+.contact-form textarea{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    height: 100px;
+    padding: 10px;
+}
+.contact-form button{
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid lightgray;
+    font-size: 20px;
+    align-self: center;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.socials-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 20%;
+}
+.socials-container h1{
+    color: white;
+}
+/* contact social icons */
+.social-icon{
+    width: 40px;
+    height: 40px;
+}
+
+.socials{
+    width: 150px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.socials:hover{
+    background-color: rgba(255, 255, 255, 0.13);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+
+}
+
+.or{
+    font-size: 40px;
+    color: white;
+}
+/* linkedin */
+.linkedin .social-icon{
+    background-image: url('./resources/icons/linkedin-dark.png');
+    background-size: cover;
+}
+.linkedin:hover .social-icon{
+    background-image: url('./resources/icons/linkedin.png');
+    background-size: cover;
+    transform: scale(1.1, 1.1);
+}
+
+/* instagram */
+.instagram .social-icon{
+    background-image: url('./resources/icons/instagram-dark.png');
+    background-size: cover;
+}
+.instagram:hover .social-icon{
+    background-image: url('./resources/icons/instagram.png');
+    background-size: cover;
+    transform: scale(1.1, 1.1);
+}
+
+/* fiverr */
+.fiverr .social-icon{
+    background-image: url('./resources/icons/fiverr-dark.png');
+    background-size: cover;
+}
+.fiverr:hover .social-icon{
+    background-image: url('./resources/icons/fiverr.png');
+    background-size: cover;
+    transform: scale(1.1, 1.1);
+}
+
+/* github */
+.github .social-icon{
+    background-image: url('./resources/icons/github-dark.png');
+    background-size: cover;
+}
+.github:hover .social-icon{
+    background-image: url('./resources/icons/github.png');
+    background-size: cover;
+    transform: scale(1.1, 1.1);
+}
+
+/* gmail */
+.gmail .social-icon{
+    background-image: url('./resources/icons/gmail-dark.png');
+    background-size: cover;
+}
+.gmail:hover .social-icon{
+    background-image: url('./resources/icons/gmail.png');
+    background-size: cover;
+    transform: scale(1.1, 1.1);
+}
+
+
+/* about me screen */
+.about-body{
+    display: flex;
+    justify-content: space-between;
+}
+.personal-info{
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+.personal-desc{
+    width: 40%;
+    margin: 10px;
+}
+.personal-details{
+    padding: 10px;
+    
+}
+.personal-details ul{
+    list-style: none;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.experience-info{
+    margin-right: 10%;
+    width: 50%;
+}
+.skill-list{
+    display: flex;
+    height: 75px;
+}
+.skill{
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 

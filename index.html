@@ -23,8 +23,51 @@
         <div id="leftScreen-bg" class="backgrounds"></div>
         <div class="content glassmorphism">
             
-            <h1>About</h1>
+            
             <button class="side-btns" id="leftScreen-main-btn" onClick="changeScreen('left-screen','main-screen')"><img class="nav-btns-img" style="transform: rotate(-90deg);" src="./resources/imgs/arrows.png"></button>
+            <div class="about-body">
+                <div class="personal-info">
+
+                    <h1>About me</h1>
+                    <div class="personal-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div class="personal-details">
+                        Full name: False information here <br>
+                        Birthdate: False information here <br>
+                        Languages I know: False information here <br>
+                        Contact: <br>
+                        <ul>
+                            <li>Email: False information here</li>
+                            <li>Phone number: False information here</li>
+                            <li>LinkedIn: False information here</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-info">
+                    <div class="skills">
+                        <h2>What I know until now</h2>
+                        <div class="known-skills skill-list">
+                            <div class="skill" id="javascript">JS</div>
+                            <div class="skill" id="css">CSS</div>
+                            <div class="skill" id="html">HTML</div>
+                            <div class="skill" id="react">React</div>
+                        </div>
+                        <h2>What I'm learning</h2>
+                        <div class="learning-skills skill-list">
+                            <div class="skill" id="express">Express</div>
+                            <div class="skill" id="nodejs">NodeJS</div>
+                            <div class="skill" id="mongodb">MongoDB</div>
+                        </div>
+                        <h2>What I plan to learn</h2>
+                        <div class="planned-skills skill-list">
+                            <div class="skill" id="php">PHP</div>
+                            <div class="skill" id="vue">VUE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
        
         </div>
     </div>
@@ -32,18 +75,124 @@
         <div id="bottomScreen-bg" class="backgrounds"></div>
         <div class="content glassmorphism">
             
-            <h1>Projects</h1>
+            
             <button class="side-btns showAfter1Sec pulse" id="bottomScreen-main-btn" onClick="changeScreen('bottom-screen','main-screen')"><img class="nav-btns-img" style="transform: rotate(-180deg);" src="./resources/imgs/arrows.png"></button>
             
+            <div class="projects-container">
+
+                <div class="project-body">
+                    <img class="project-imgs" src="./resources/imgs/movie-library-app.png">
+                    <div class="info">
+                        <div class="project-name">Movie Library App</div>
+                        <div class="project-short-desc">A website that uses an API to show movies data. You can make an account, save favorite movies and see recommendations. It also works for TV shows.</div>
+                        <div class="btns">
+                            <a href="https://stefan0712.github.io/movie-library/movie/436270">Go to</a>
+                            <a>Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <img class="project-imgs" src="./resources/imgs/to-do-app.png">
+                    <div class="info">
+                        <div class="project-name">To-Do App</div>
+                        <div class="project-short-desc">Very basic TO-DO app. It lets you create tasks, assign them to a specifit group, create new groups, delete and edit existing tasks.</div>
+                        <div class="btns">
+                            <a href="https://stefan0712.github.io/to-do-app/">Go to</a>
+                            <a>Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <img class="project-imgs" src="./resources/imgs/weather-app.png">
+                    <div class="info">
+                        <div class="project-name">Weather App</div>
+                        <div class="project-short-desc">Using an API, you can see general weather details about a specific location.</div>
+                        <div class="btns">
+                            <a href="https://stefan0712.github.io/weather-app/">Go to</a>
+                            <a>Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <img class="project-imgs" src="./resources/imgs/admin-dashboard-app.png">
+                    <div class="info">
+                        <div class="project-name">Admin Dashboard</div>
+                        <div class="project-short-desc">This simple, yet rich admin Dashboard was made only pure js and css. No functionality whatsoever, made only for testing css skills.</div>
+                        <div class="btns">
+                            <a href="https://stefan0712.github.io/admin-dashboard/">Go to</a>
+                            <a>Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <img class="project-imgs" src="./resources/imgs/landing-page-app.png">
+                    <div class="info">
+                        <div class="project-name">Landing Page</div>
+                        <div class="project-short-desc">Made only with css and js, it is just a simple landing page with dummy content. It can be customised to match a lot of uses.</div>
+                        <div class="btns">
+                            <a href="https://stefan0712.github.io/Landing-page/">Go to</a>
+                            <a>Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <img class="project-imgs" src="./resources/imgs/tic-tac-toe-app.png">
+                    <div class="info">
+                        <div class="project-name">Tic-Tac-Toe</div>
+                        <div class="project-short-desc">This small game is proof of knowing basic JavaScript and html. It is not advanced in any way.</div>
+                        <div class="btns">
+                            <a href="https://stefan0712.github.io/tic-tac-toe/">Go to</a>
+                            <a>Details</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
         </div>
     </div>
     <div class="side-screen right-screen moveRight glassmorphism">
         <div id="rightScreen-bg" class="backgrounds"></div>
         <div class="content glassmorphism">
             
-            <h1>Contact</h1>
+           
             <button class="side-btns" id="rightScreen-main-btn" onClick="changeScreen('right-screen','main-screen')"><img class="nav-btns-img" style="transform: rotate(+90deg);" src="./resources/imgs/arrows.png"></button>
             
+
+            <div class="contact-body">
+                <div class="socials-container">
+                    <h1>Contact me on</h1>
+                    <div class="linkedin socials"><div class="social-icon"></div>LinkedIn</div>
+                    <div class="instagram socials"><div class="social-icon"></div>Instagram</div>
+                    <div class="fiverr socials"><div class="social-icon"></div>Fiverr</div>
+                    <div class="github socials"><div class="social-icon"></div>Github</div>
+                    <div class="gmail socials"><div class="social-icon"></div>Gmail</div>
+                </div>
+                <div class="or">Or</div>
+                <form class="contact-form">
+                    <h2>Send me a direct message</h2>
+                    <fieldset class="name-field">
+                        <label for="name">Name</label>
+                        <input type="text" required id="name">
+                    </fieldset>
+                    <fieldset class="email-field">
+                        <label for="email">Email</label>
+                        <input type="email" required id="email">
+                    </fieldset>
+                    <fieldset class="subject-field">
+                        <label for="subject">Subject</label>
+                        <input type="text" required id="subject">
+                    </fieldset>
+                    <fieldset class="message-field">
+                        <label for="message">Message</label>
+                        <textarea type="text" required id="message"></textarea>
+                    </fieldset>
+                    <button type="submit" id="submit-btn">Submit</button>
+                </form>
+
+                
+            </div>
         </div>
     </div>
 </body>
